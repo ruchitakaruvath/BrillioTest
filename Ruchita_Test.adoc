@@ -1,0 +1,111 @@
+:toc:
+Contents
+= Chapter 1: SDN and NFV	2
+== About SDN	2
+== About NFV	2
+== Similarities and differences between SDN and NFV	3
+== Comparison of traditional network infrastructure with SDN and NFV technologies	3
+== Business benefits of SDN and NFV	4
+= Chapter 2: Considerations before upgrading to SDN and NFV technologies	6
+== Volume of effort and work required to upgrade to SDN and NFV	6
+== Quality of output	6
+== Challenges related to SDN and NFV	6
+= Glossary	7
+= Index	8
+
+ 
+= Chapter 1: SDN and NFV
+
+== About SDN
+Software-defined networking (SDN) defines the kinds of infrastructure, the services and applications they deliver, and the network policies that formulate and guide their delivery and use. This kind of functionality that is governed by rules and policies changes over time, and sometimes rapidly. 
+The following are the key features of SDN:
+=== SDN delivers directly programmable network control: A collection of programmable interfaces allow provisioning of new network elements and devices or reconfiguring existing ones. This allows administrators to easily program networks either by using scripting tools or third-party tools and consoles, which employ these programmable interfaces.
+[square]
+* SDN is agile and responsive: SDN allows administrators to adjust network-wide traffic flow dynamically to meet fluctuating needs and demands.
+* Network intelligence is logically centralized through SDN controllers: SDN controllers are implemented in software and, hence, maintain a coherent global view of the network. SDN is similar to a single, logical switch to applications and policy engines.
+* SDN provides programmable configuration: Network administrators can configure, control, secure, and tune network resources by using automated SDN programs. Furthermore, networking professionals can create such programs themselves by using standard, well-documented tools and interfaces.
+* SDN is standards-based and vendor-neutral: Because SDN uses open standards, SDN streamlines network design and operation. SDN controllers provide instructions by using standard protocols and interfaces, rather than relying on vendor-specific protocols, interfaces, and devices.
+
+== About NFV
+Network functions virtualization (NFV) controls network functions that must be performed at the periphery, boundary, and core levels of a network. NFV controls how to accept, forward, shape, and filter network traffic as it passes through any given infrastructure.
+The following are the key features of NFV:
+[square]
+* NFV replaces network services that are provided by dedicated hardware with virtualized software. NFV replaces network services, such as routers, firewalls, load balancers, XML processing, and WAN optimization devices, with software running on virtual machines. 
+* NFV saves both capital expenditures (CAPEX) and operating expenses (OPEX). Network services that required specialized, dedicated hardware can run on standard commodity servers such as ARM and x86 commodity hardware, thereby, reducing costs. Because server capacity can be increased or reduced through software settings made on demand, overprovisioning of data or service centers to accommodate peak demand is no longer required.
+* NFV is an industry initiative that originates from global telecom and industry players, including AT&T, British Telecom (BT), Deutsche Telekom, and others. Today, NFV falls under the aegis of European Telecommunications Standards Institute (ETSI), which defines and maintains globally applicable standards for information and telecommunications technologies.
+
+== Similarities and differences between SDN and NFV
+The core similarity between SDN and NFV is that they both use network abstraction. SDN separates network control functions from network forwarding functions, while NFV abstracts network forwarding and other networking functions from the hardware on which it runs. Thus, both SDN and NFV depend on virtualization to abstract network design and infrastructure in software, and then implement it by using the underlying software across hardware platforms and devices.
+When SDN runs on an NFV infrastructure, SDN forwards data packets from one network device to another. The networking control functions of SDN for routing, policy definition, and applications run on a virtual machine on the network. Thus, NFV provides basic networking functions, while SDN controls and orchestrates them for specific uses. SDN further allows configuration and behavior to be programmatically defined and modified.
+SDN and NFV differ in how they separate functions and abstract resources. SDN abstracts physical networking resources, such as, switches and routers, and moves decision making to a virtual network control plane. The control plane decides where to send traffic, while the hardware continues to direct and handle the traffic. NFV virtualizes all physical network resources beneath a hypervisor, which allows the network to grow without the addition of more devices. 
+While both SDN and NFV make networking architectures more flexible and dynamic, they perform different roles in defining those architectures and the infrastructure they support.
+
+== Comparison of traditional network infrastructure with SDN and NFV technologies
+Traditional networking relies on fixed-function network devices such as switches or routers. These devices have certain functions that operate well together and support the network. These network’s functions are implemented as hardware constructs, and its speed is usually bolstered.
+Traditional networks offer limited flexibility. Few APIs are exposed for provisioning, and most switching hardware and software is proprietary. Traditional networks often work well with proprietary provisioning software, but this software cannot be quickly modified on demand.
+Traditional hardware-based networks do not mesh well with the ever-changing computing and storage needs in data centers and carrier/service provider environments. 
+SDN is more suitable in scenarios where numerous characteristics demand a more flexible and dynamic approach. 
+These scenarios include the following:
+
+[square]
+* Usage and traffic patterns vary rapidly. Applications that access geographically dispersed data and services go through both public and private clouds. Such applications require flexible, dynamically adjustable traffic management and the ability to obtain bandwidth as needed.
+* IT is becoming a consumer commodity, where the bring-your-own-device (BYOD) trend requires networks to be flexible enough to accommodate whatever devices users bring with them. But networks must also provide security to protect data and assets as well as meet compliance regulations and standards.
+* With proliferation of cloud services, users require unfettered access to infrastructure, applications, and IT resources on demand.
+* With the rise in big data use for various business processes, more storage, compute, and bandwidth resources are required to handle data sets. 
+
+Traditional networks impose limitations that restrict designers' efforts to keep up with the ever-changing landscape of users, resources, services, and applications. First such limitation is the complexity and effort required in traditional networks, where bolstering capacity or capability means adding and moving devices or creating network-wide policy. The work involved is complex and time consuming and requires manual access to individual devices and consoles. 
+
+== Business benefits of SDN and NFV
+The following are the business benefits of adopting SDN and NFV:
+[square]
+* Increase business agility: The flexibility of SDN makes it easier and faster to add new innovative services, such as real-time HD video conferencing and cloud applications, while still delivering a consistently high-quality end-user experience. 
+* Enhance network visibility, performance, and management control: SDN offers network-wide visibility, analytics, and control through a simple dashboard. A centralized controller determines the best route for each application traffic flow. Intelligence at the core and edge of the network can be used to run some tasks that are prone to latency faster. This helps ensure cloud applications are responsive and easy to use, which helps in increasing employee productivity and delivering a great customer experience while minimizing network costs. This is important as the cost of IT downtime ranges from $1 million per year for a medium size company to $60 million per year for large enterprises according to a report from IHS.
+* Enhance security: The centralized SDN controller in the core network has visibility over end-to-end traffic flows and emerging threats. It can centrally push global security policies updates to every site, while a virtualized switch can filter packets at the network edge and redirect suspicious traffic to higher layer security controls. Role-based access to data and applications over diverse transport links with varying security levels is also easier by using an end-to-end SDN controller.
+
+
+* Eliminate vendor lock-in: Open platforms in SDN eliminate vendor lock-in. Open platforms enable enterprises to use multivendor solutions to ensure healthy price competition and faster innovation. The OpenDaylight platform, which is leading the transformation to open SDN, now accounts for 95 percent of the entire SDN market.
+* Reduce costs: SDN runs multiple compute, storage, and processing functions on low cost commodity servers to reduce capital expenditure. At the same time, virtualization automates a lot of manual network configuration and management tasks, which reduces operating costs. This eliminates the need to physically visit switches and branch office sites. 
+ 
+= Chapter 2: Considerations before upgrading to SDN and NFV technologies
+
+== Volume of effort and work required to upgrade to SDN and NFV
+The following networking elements and functions need virtualization:
+[square]
+* Switching elements such as broadband network gateways and routers.
+* Mobile network nodes such as radio network controller.
+* Customer premise equipment such as Home routers and set-top boxes.
+* Traffic analysis such as quality of experience measurement.
+* Control plane / access functions such as AAA servers and policy control.
+* Security such as firewalls and virus scanners.
+
+== Quality of output
+The next generation of 5G networks is being developed to provide services with the highest Quality of Service (QoS) attributes, such as ultra-low latency, ultra-reliable communication, high data rates, and high user mobility experience. To achieve this, several new settings must be implemented in the mobile network architecture such as incorporation of SDN and NFV, along with the shift of processes to the edge of the network. This work proposes an architecture that combines the NFV and SDN concepts to provide the logic for Quality of Service (QoS) traffic detection and the logic for QoS management in next-generation mobile networks.
+
+== Challenges related to SDN and NFV
+[square]
+* Process of transition: Replacing network devices with software require hardware changes. Users are aware of how routers work and what to expect of them. Changing the network in major ways carries some risk, and providers may want to avoid service outages or more work than their service teams can handle.
+* Vendor compatibility: VNFs from different vendors need to work together smoothly, and they aren’t well standardized yet. 
+* Network management:  System configurations vary as customers gain control. In most cases, intervention from the service team is not required, but those that do may present situations that are unique to their deployment.
+* Rapid growth: Virtual infrastructure can start in minutes as compared to traditional networks. Hence, providers must plan the expansion of its capacity, while maintaining policies.
+* Security: VNFs that run on general-purpose hardware must be as secure as their dedicated equivalents. SDN entails sending network control data over the Internet. Secure protocols and orchestration practices can maintain the necessary security levels, but it’s important to ensure that the transition does not introduce any vulnerabilities. The SDN controller needs to be highly reliable. If it suffers from malware or a DDoS attack, the impact will be widespread.
+
+= .Glossary
+|===
+|Abbreviation | Term
+|SDN
+|Software-defined networking
+
+|NFV
+| Network functions virtualization
+
+= Index
+ 
+about: NFV, 2; SDN, 2
+advantanges: SDN and NFV, 4
+challenges: related to SDN and NFV, 6
+comparison: traditional network and SDN/NFV, 3
+differences: SDN and NFV, 3
+quality of output, 6
+similarities: SDN and NFV, 3
+ 
+
